@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import NovaLogo from "../components/NovaLogo.astro";
 import BackButton from "../components/BackButton.astro";
 import Leaderboard from "../components/Leaderboard.astro";
 import { SIGNUP_URL } from "../data/cities";
@@ -31,18 +30,14 @@ const STEPS: { label: string; title: string; body: string }[] = [
   <div class="mx-auto max-w-4xl px-5 pt-6 pb-24">
     <BackButton />
 
-    {/* Logo + title, same shape as the FAQ page. */}
-    <div
-      class="mt-8 flex flex-wrap items-center justify-center gap-6 sm:justify-start"
-    >
-      <NovaLogo class="h-20 sm:h-28" />
-      <h1 class="text-5xl font-semibold text-white sm:text-6xl">Leaderboard</h1>
-    </div>
+    <h1 class="mt-8 text-5xl font-semibold text-white sm:text-6xl">
+      Leaderboard
+    </h1>
 
     <p class="mt-8 max-w-2xl text-lg leading-relaxed text-white/85 sm:text-xl">
       Every person who signs up with your referral code moves you up this list.
-      That&apos;s the whole game. Bring a friend, bring your whole class.
-      Nova is better when the room is full.
+      That&apos;s the whole game. Bring a friend, bring your whole class. Nova
+      is better when the room is full.
     </p>
 
     <div class="mt-7 flex flex-wrap items-center gap-4">
